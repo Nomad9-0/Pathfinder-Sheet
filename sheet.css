@@ -1,0 +1,406 @@
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  /*border-bottom: solid 3px #d22730;*/
+  padding-bottom: 10px;
+  margin-top: 100px;
+  margin-bottom: -100px;
+}
+
+.button__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  border: 2px solid #d22730;
+  font-size: .8rem;
+  padding: .8rem .8rem;
+  -o-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+  font-family: Rajdhani;
+  text-transform: uppercase;
+  color: #d22730;
+  font-weight: 600;
+  margin: 0 0 1.563rem;
+  background: 0 0;
+  background-image: linear-gradient(#d22730, #d22730);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100% 0;
+  line-height: 0;
+  cursor: pointer;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%
+}
+
+.button__button:active {
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
+  transform: translateY(2px)
+}
+
+.button__button:focus {
+  outline: 0
+}
+
+.button__button_no-margin {
+  margin: 0
+}
+
+@media all and (min-width:600px) {
+  .button__button {
+    padding: .8rem 1rem;
+    -ms-flex-item-align: center;
+    align-self: center
+  }
+}
+
+@media all and (min-width:1200px) {
+  .button__button {
+    font-size: 1rem;
+    padding: 1rem 1.25rem
+  }
+  .button__button:hover {
+    background-size: 100% 100%;
+    color: rgba(255, 255, 255, .7411764705882353);
+    box-shadow: 0 0 3px 0 #d22730
+  }
+}
+
+html {
+  font-family: Rajdhani, sans-serif;
+  background: url(http://i.imgur.com/HBv7gOC.png) no-repeat center center fixed;
+  color: rgba(255, 255, 255, .7411764705882353);
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 400
+}
+
+@font-face {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/public/fonts/Rajdhani-Regular.ttf)
+}
+
+@font-face {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: 500;
+  src: url(/public/fonts/Rajdhani-Medium.ttf)
+}
+
+@font-face {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: 600;
+  src: url(/public/fonts/Rajdhani-SemiBold.ttf)
+}
+
+@font-face {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: 700;
+  src: url(/public/fonts/Rajdhani-Bold.ttf)
+}
+
+@font-face {
+  font-family: icomoon;
+  src: url(/public/fonts/icomoon.ttf?6kn1w4);
+  font-weight: 400;
+  font-style: normal
+}
+
+[class*=" icon-"], [class^=icon-] {
+  font-family: icomoon;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-feature-settings: normal;
+  -moz-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.icon-arrow:before {
+  content: "\e900"
+}
+
+.icon-champ-grid-icon:before {
+  content: "\e901"
+}
+
+.icon-swap-matchup:before {
+  content: "\e902"
+}
+
+.icon-cross:before {
+  content: "\ea0f"
+}
+
+.icon-checkmark:before {
+  content: "\ea10"
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none
+}
+
+textarea {
+  resize: none
+}
+
+.header {
+  font-size: 1.563rem;
+  font-weight: 600;
+  color: #d22730;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 1.25rem
+}
+
+.header__text_small, .header__text_x-small {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, .7411764705882353);
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: .8rem
+}
+
+.header__text_x-small {
+  font-size: 1rem;
+  margin-bottom: .64rem
+}
+
+.header__text_top-margin {
+  margin-top: 1rem
+}
+
+@media all and (min-width:600px) {
+  :root {
+    font-size: 19px
+  }
+}
+
+@media all and (min-width:600px) {
+  .header {
+    font-size: 1.953rem;
+    margin: 0 0 2.441rem
+  }
+  .header__text_small {
+    font-size: 1.563rem;
+    margin: 0 0 .8rem
+  }
+  .header__text_x-small {
+    font-size: 1.25rem;
+    margin: 0 0 .64rem
+  }
+}
+
+@media all and (min-width:1200px) {
+  :root {
+    font-size: 20px
+  }
+  .header__text_top-margin {
+    margin-top: 0
+  }
+}
+
+@media all and (min-width:1600px) {
+  :root {
+    font-size: 22px
+  }
+}
+
+@media all and (min-width:1800px) {
+  :root {
+    font-size: 24px
+  }
+}
+
+.navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #131313;
+  margin: 0;
+  border-bottom: 1px solid #d22730;
+  box-shadow: 0 0 3px 0 #d22730;
+  z-index: 10
+}
+
+.navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 2.5rem
+}
+
+.navbar a {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 0 0 .64rem
+}
+
+.logo__img {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0 .2rem 0 0
+}
+
+.logo__text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 0
+}
+
+.logo__text_emphasis {
+  color: #d22730;
+  font-weight: 700
+}
+
+.navbar__button {
+  font-size: .8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -o-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+  background-image: linear-gradient(#b72a31, #b72a31);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100% 0;
+  cursor: pointer;
+  color: rgba(255, 255, 255, .7411764705882353);
+  font-weight: 500;
+  background-color: #d22730;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 .512rem
+}
+
+.navbar__button-icon {
+  margin: 0 .3rem 0 0;
+  font-size: .8rem
+}
+
+@media all and (min-width:600px) {
+  .navbar {
+    height: 3rem
+  }
+  .logo__img {
+    width: 1.35rem;
+    height: 1.35rem
+  }
+  .logo__text {
+    font-size: 1.25rem
+  }
+  .navbar__button {
+    font-size: 1rem;
+    width: 10rem
+  }
+  .navbar__icon {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 .64rem 0 0
+  }
+}
+
+@media all and (min-width:1200px) {
+  .navbar {
+    height: 3.5rem
+  }
+  .navbar__button:hover {
+    background-size: 100% 100%;
+    z-index: 20;
+    box-shadow: 0 0 3px 0 #d22730
+  }
+  .logo__img {
+    width: 10rem;
+    height: auto;
+  }
+  .logo__text {
+    font-size: 1.563rem
+  }
+}
+
+@media all and (min-width:1800px) {
+  .navbar__button {
+    width: 10rem
+  }
+}
+
+/* End Navbar */
+
+/*Random ability scores*/
+
+.randomAbility {
+  background: blue;
+  float: left;
+}
+
+.scores {
+  border-style: solid;
+  border-color: red;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.btn {
+  border-radius: 50px;
+  font-size: 30px;
+  background-color: red;
+  color: white;
+}
+
+/*Character Sheet*/
+
+.abilities {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
