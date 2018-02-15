@@ -374,9 +374,16 @@ textarea {
 
 /*Random ability scores*/
 
-.randomAbility {
-  background: blue;
+#randomAbility {
+  background: grey;
   float: left;
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+}
+
+.randomScoreCells {
+  float: right;
 }
 
 .scores {
@@ -388,6 +395,7 @@ textarea {
   margin: 10px;
   text-align: center;
   font-size: 30px;
+  color: white;
 }
 
 .btn {
@@ -395,12 +403,33 @@ textarea {
   font-size: 30px;
   background-color: red;
   color: white;
+  font-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#toggleBtn {
+  float: left;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  font-align: center;
+  border-radius: 50px;
+  background-color: red;
 }
 
 /*Character Sheet*/
+
+.characterId {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  float: left;
+}
 
 .abilities {
   width: 50px;
   height: 50px;
   margin: 10px;
+  float: right;
 }
