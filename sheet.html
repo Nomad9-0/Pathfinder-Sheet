@@ -14,30 +14,17 @@
   </div>
 </nav>
 <!--End Navbar-->
-
-<!--Random ability scores-->
-<div id="randomAbility">
-  <input class="btn" type="button" id="btnSearch" value="Generate Ability Scores" onclick="randomScore();" />
-  <div class="randomScoreCells">
-    <div class="scores" id="scores1"></div>
-    <div class="scores" id="scores2"></div>
-    <div class="scores" id="scores3"></div>
-    <div class="scores" id="scores4"></div>
-    <div class="scores" id="scores5"></div>
-    <div class="scores" id="scores6"></div>
-  </div>
-</div>
-<div><button onclick="toggleGenerator()" id="toggleBtn">Toggle</button></div>
-
-<!--Charachter Sheet-->
-<div class="characterId">
-  <form>
-    Name: <input type="text"><br>
-    Alignment: <input type="text"><br>
-    Character Level: <input><br>
-    Deity: <input type="text"><br>
-    Homeland: <input type="text"><br>
-    Race: <select name="race">
+<div class="slideshow-container">
+  <!--Charachter Sheet-->
+  <div class="mySlides">
+    <div class="characterId">
+      <form>
+        Name: <input type="text"><br>
+        Alignment: <input type="text"><br>
+        Character Level: <input><br>
+        Deity: <input type="text"><br>
+        Homeland: <input type="text"><br>
+        Race: <select name="race">
               <option value="human">Human</option>
               <option value="Elf">Elf</option>
               <option value="Dwarf">Dwarf</option>
@@ -46,29 +33,68 @@
               <option value="Halfling">Halfling</option>
               <option value="Gnome">Gnome</option>
           </select>
-    Size: <select name="size">
+        Size: <select name="size">
               <option value="small">Small</option>
               <option value="medium">Medium</option>
               <option value="large">Large</option>
           </select>
-    Gender: <select name="gender">
+        Gender: <select name="gender">
               <option value="male">Male</option>
               <option value="female">Female</option>
           </select>
-    Age: <input type="number"><br>
-    Height: <input><br>
-    Weight: <input><br>
-    Hair: <input><br>
-    Eyes: <input><br>
-  </form>
+        Age: <input type="number"><br>
+        Height: <input><br>
+        Weight: <input><br>
+        Hair: <input><br>
+        Eyes: <input><br>
+      </form>
+    </div>
+  </div>
+  <!--Ability Scores-->
+  <!--Random Generator-->
+  <div class="mySlides">
+    <div>
+      <div id="randomAbility">
+        <input class="btn" type="button" id="btnSearch" value="Generate Ability Scores" onclick="randomScore();" />
+        <div class="randomScoreCells">
+          <div class="scores" id="scores1"></div>
+          <div class="scores" id="scores2"></div>
+          <div class="scores" id="scores3"></div>
+          <div class="scores" id="scores4"></div>
+          <div class="scores" id="scores5"></div>
+          <div class="scores" id="scores6"></div>
+        </div>
+      </div>
+      <div><button onclick="toggleGenerator()" id="toggleBtn">Toggle</button></div>
+    </div>
+    <!--Ability Status-->
+    <div class="abilities">
+      <form>
+        STR: <input type="number"><br>Ability Modifier<input type="number"><br>Temp Adjustment<input type="number"><br>Temp Modifier<input type="number"><br>
+        DEX: <input type="number"><br><input type="number"><br><input type="number"><br><input type="number"><br>
+        CON: <input type="number"><br><input type="number"><br><input type="number"><br><input type="number"><br>
+        INT: <input type="number"><br><input type="number"><br><input type="number"><br><input type="number"><br>
+        WIS: <input type="number"><br><input type="number"><br><input type="number"><br><input type="number"><br>
+        CHA: <input type="number"><br><input type="number"><br><input type="number"><br><input type="number"><br>
+      </form>
+    </div>
+  </div>
+  <!--Slide Buttons-->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-<div class="abilities">
-  <form>
-    STR: <input type="number"><br>
-    DEX: <input type="number"><br>
-    CON: <input type="number"><br>
-    INT: <input type="number"><br>
-    WIS: <input type="number"><br>
-    CHA: <input type="number"><br>
-  </form>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+</div>
+
 </div>
