@@ -9,7 +9,7 @@ function toggleGenerator() { //toggles randomScore()
 }
 
 function randomScore() { //Generates random ability scores
-  let abilityScores = [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
+  let abilityScores = [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
   let num1 = abilityScores[Math.floor(Math.random() * abilityScores.length)]; //gets random number from array
   let num2 = abilityScores[Math.floor(Math.random() * abilityScores.length)];
   let num3 = abilityScores[Math.floor(Math.random() * abilityScores.length)];
