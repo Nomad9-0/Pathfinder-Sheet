@@ -14,18 +14,36 @@
   </div>
 </nav>
 <!--End Navbar-->
+<!--Charachter Sheet-->
 <div class="slideshow-container">
-  <!--Charachter Sheet-->
   <div class="mySlides">
+
     <div class="characterId">
-      <form>
-        Name: <input type="text"><br>
-        Alignment: <input type="text"><br>
-        Character Level: <input><br>
-        Deity: <input type="text"><br>
-        Homeland: <input type="text"><br>
-        Race: <select name="race">
-              <option value="human">Human</option>
+      <div class="info">
+        <p class="inline-p">
+          <label for="">Name:</label>
+          <input type="text">
+        </p>
+        <p class="inline-p">
+          <label for="">Alignment:</label>
+          <input type="text">
+        </p>
+        <p class="inline-p">
+          <label for="">Character Level:</label>
+          <input>
+        </p>
+        <p>
+          <label for="">Deity:</label>
+          <input type="text">
+        </p>
+        <p class="inline-p">
+          <label for="">Homeland:</label>
+          <input type="text">
+        </p>
+
+        <label>Race:</label>
+        <select name="race">
+              <option value="Human">Human</option>
               <option value="Elf">Elf</option>
               <option value="Dwarf">Dwarf</option>
               <option value="Half-Elf">Half-Elf</option>
@@ -33,24 +51,42 @@
               <option value="Halfling">Halfling</option>
               <option value="Gnome">Gnome</option>
           </select>
-        Size: <select name="size">
+        <label>Size:</label>
+        <select name="size">
               <option value="small">Small</option>
               <option value="medium">Medium</option>
               <option value="large">Large</option>
           </select>
-        Gender: <select name="gender">
+        <label>Gender:</label>
+        <select name="gender">
               <option value="male">Male</option>
               <option value="female">Female</option>
           </select>
-        Age: <input type="number"><br>
-        Height: <input><br>
-        Weight: <input><br>
-        Hair: <input><br>
-        Eyes: <input><br>
-      </form>
+        <p class="inline-p">
+          <label for="">Age:</label>
+          <input type="number"><br>
+        </p>
+        <p class="inline-p">
+          <label for="">Height:</label>
+          <input>
+        </p>
+        <p class="inline-p">
+          <label for="">Weight:</label>
+          <input>
+        </p>
+        <p class="inline-p">
+          <label for="">Hair:</label>
+          <input>
+        </p>
+        <p class="inline-p">
+          <label for="">Eyes:</label>
+          <input>
+        </p>
+      </div>
+
     </div>
   </div>
-  <!--Ability Scores-->
+
   <!--Random Generator-->
   <div class="mySlides">
     <div>
@@ -67,21 +103,226 @@
       </div>
       <div><button onclick="toggleGenerator()" id="toggleBtn">Toggle</button></div>
     </div>
-    <!--Ability Status-->
+    <!--Ability Scores-->
     <div class="abilities">
-      <form>
-        STR: <input type="number"><br>Ability Modifier<input type="number"><br>Temp Adjustment<input type="number"><br>Temp Modifier<input type="number"><br>
-        DEX: <input type="number"><br><input type="number"><br><input type="number"><br><input type="number"><br>
-        CON: <input type="number"><br><input type="number"><br><input type="number"><br><input type="number"><br>
-        INT: <input type="number"><br><input type="number"><br><input type="number"><br><input type="number"><br>
-        WIS: <input type="number"><br><input type="number"><br><input type="number"><br><input type="number"><br>
-        CHA: <input type="number"><br><input type="number"><br><input type="number"><br><input type="number"><br>
-      </form>
+      <p class="ablt inline-p"><br>
+        <label for="">STR:</label>
+        <input class="abltNum" type="number">
+        <label for="">Ablt Mod:</label>
+        <input class="abltNum" type="number">
+        <label for="">Temp Adj:</label>
+        <input class="abltNum" type="number">
+        <label for="">Temp Mod:</label>
+        <input class="abltNum" type="number">
+      </p>
+      <p class="ablt inline-p"><br>
+        <label for="">DEX:</label>
+        <input class="abltNum" type="number">
+        <label for="">Ablt Mod:</label>
+        <input class="abltNum" type="number">
+        <label for="">Temp Adj:</label>
+        <input class="abltNum" type="number">
+        <label for="">Temp Mod:</label>
+        <input class="abltNum" type="number">
+      </p>
+      <p class="ablt inline-p"><br>
+        <label for="">CON:</label>
+        <input class="abltNum" type="number">
+        <label for="">Ablt Mod:</label>
+        <input class="abltNum" type="number">
+        <label for="">Temp Adj:</label>
+        <input class="abltNum" type="number">
+        <label for="">Temp Mod:</label>
+        <input class="abltNum" type="number">
+      </p>
+      <p class="ablt inline-p"><br>
+        <label for="">INT:</label>
+        <input class="abltNum" type="number">
+        <label for="">Ablt Mod:</label>
+        <input class="abltNum" type="number">
+        <label for="">Temp Adj:</label>
+        <input class="abltNum" type="number">
+        <label for="">Temp Mod:</label>
+        <input class="abltNum" type="number">
+      </p>
+      <p class="ablt inline-p"><br>
+        <label for="">WIS:</label>
+        <input class="abltNum" type="number">
+        <label for="">Ablt Mod:</label>
+        <input class="abltNum" type="number">
+        <label for="">Temp Adj:</label>
+        <input class="abltNum" type="number">
+        <label for="">Temp Mod:</label>
+        <input class="abltNum" type="number">
+      </p>
+      <p class="ablt inline-p"><br>
+        <label for="">CHA:</label>
+        <input class="abltNum" type="number">
+        <label for="">Ablt Mod:</label>
+        <input class="abltNum" type="number">
+        <label for="">Temp Adj:</label>
+        <input class="abltNum" type="number">
+        <label for="">Temp Mod:</label>
+        <input class="abltNum" type="number">
+      </p>
     </div>
   </div>
-  <!--Slide Buttons-->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <!--Health and Saves-->
+  <div class="mySlides">
+    <p>
+      <label>Hit Points:</label>
+      <input class="healthSaves" type="number">
+      <labels>Speed:</labels>
+      <input class="healthSaves" type="number">ft.
+      <label>Initiative:</labels>
+    <input class="healthSaves" type="number" id="initiative">
+  </p>
+  <p>
+    <label>AC:</label>
+      <input class="healthSaves" type="number" id="armorClass">
+      <label>Touch:</label>
+      <input class="healthSaves" type="number">
+      <label>Flat-Footed:</label>
+      <input class="healthSaves" type="number">
+    </p>
+    <p>
+      <label>Fortitude:</label>
+      <input class="healthSaves" type="number" id="fortitude">
+      <label>Reflex:</label>
+      <input class="healthSaves" type="number" id="reflex">
+      <label>Will:</label>
+      <input class="healthSaves" type="number" id="will">
+    </p>
+    <p>
+      <label>Base Attack Bonus:</label>
+      <input class="healthSaves" type="number">
+      <label>Spell Resistance:</label>
+      <input class="healthSaves" type="number">
+      <label>CMB:</label>
+      <input class="healthSaves" type="number" id="cmb">
+      <label>CMD:</label>
+      <input class="healthSaves" type="number" id="cmd">
+    </p>
+  </div>
+
+  <!--Weapons-->
+  <div class="mySlides">
+    <p>
+      <label>Weapon</label>
+      <input class="weapons">
+      <label>Attack Bonus</label>
+      <input class="weaponStats">
+      <label>Critical</label>
+      <input class="weaponStats">
+      <label>Type</label>
+      <input class="weaponStats">
+      <label>Range</label>
+      <input class="weaponStats">
+      <label>Ammunation</label>
+      <input class="weaponStats">
+      <label>Damage</label>
+      <input class="weaponStats">
+    </p>
+    <p>
+      <label>Weapon</label>
+      <input class="weapons">
+      <label>Attack Bonus</label>
+      <input class="weaponStats">
+      <label>Critical</label>
+      <input class="weaponStats">
+      <label>Type</label>
+      <input class="weaponStats">
+      <label>Range</label>
+      <input class="weaponStats">
+      <label>Ammunation</label>
+      <input class="weaponStats">
+      <label>Damage</label>
+      <input class="weaponStats">
+    </p>
+    <p>
+      <label>Weapon</label>
+      <input class="weapons">
+      <label>Attack Bonus</label>
+      <input class="weaponStats">
+      <label>Critical</label>
+      <input class="weaponStats">
+      <label>Type</label>
+      <input class="weaponStats">
+      <label>Range</label>
+      <input class="weaponStats">
+      <label>Ammunation</label>
+      <input class="weaponStats">
+      <label>Damage</label>
+      <input class="weaponStats">
+    </p>
+    <p>
+      <label>Weapon</label>
+      <input class="weapons">
+      <label>Attack Bonus</label>
+      <input class="weaponStats">
+      <label>Critical</label>
+      <input class="weaponStats">
+      <label>Type</label>
+      <input class="weaponStats">
+      <label>Range</label>
+      <input class="weaponStats">
+      <label>Ammunation</label>
+      <input class="weaponStats">
+      <label>Damage</label>
+      <input class="weaponStats">
+    </p>
+    <p>
+      <label>Weapon</label>
+      <input class="weapons">
+      <label>Attack Bonus</label>
+      <input class="weaponStats">
+      <label>Critical</label>
+      <input class="weaponStats">
+      <label>Type</label>
+      <input class="weaponStats">
+      <label>Range</label>
+      <input class="weaponStats">
+      <label>Ammunation</label>
+      <input class="weaponStats">
+      <label>Damage</label>
+      <input class="weaponStats">
+    </p>
+  </div>
+
+  <!--Skills-->
+  <div class="mySlides">
+    <p>Skills</p>
+  </div>
+
+  <!--AC Items-->
+  <div class="mySlides">
+    <p>AC Items</p>
+  </div>
+
+  <!--Feats-->
+  <div class="mySlides">
+    <p>Feats</p>
+  </div>
+
+  <!--Special Abilities-->
+  <div class="mySlides">
+    <p>Special Abilities</p>
+  </div>
+
+  <!--Gear-->
+  <div class="mySlides">
+    <p>Gear</p>
+  </div>
+
+  <!--Spells-->
+  <div class="mySlides">
+    <p>Spells</p>
+  </div>
+
+</div>
+<!--Slides-->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
 
@@ -95,6 +336,7 @@
   <span class="dot" onclick="currentSlide(7)"></span>
   <span class="dot" onclick="currentSlide(8)"></span>
   <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
 </div>
 
 </div>
